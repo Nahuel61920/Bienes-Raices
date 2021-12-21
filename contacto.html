@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Bienes Raices </title>
+</head>
+<body>
+    <header class="site-header">
+        <div class="conteiner conteiner-header">
+            <div class="bars">
+                <a href="/">
+                    <img src="img/logo.svg" alt="Logo de Bienes Raices">
+                </a>
+                
+                <div class="mobile-menu">
+                    <a href="#navigation">
+                        <img src="img/barras.svg" alt="Icono Menu">
+                    </a>
+                </div>
+
+                <nav id="navigation" class="navigation">
+                    <a href="Nosotros.html">Nosotros</a>
+                    <a href="anuncios.html">Anucios</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="contacto.html">Contacto</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <h1 class="fw-300 center-text">Contacto</h1>
+    <img src="img/destacada3.jpg" alt="Imagen Principal">
+
+    <main class="conteiner section conteiner-center">
+        <h2 class="fw-300 center-text">Llena el Formulario de Contacto</h2>
+        <form action="">
+            <fieldset>
+                <legend>Información Personal</legend>
+
+                <label for="nombre">Nombre: </label>
+                <input type="text" id="nombre" placeholder="Tu Nombre">
+
+                <label for="email">E-mail: </label>
+                <input type="email" id="email" placeholder="Tu Correo electrónico">
+
+                <label for="telefono">Teléfono: </label>
+                <input type="tel" id="telefono" placeholder="Tu Teléfono">
+
+                <label for="mensaje">Mensaje: </label>
+                <textarea name="" id="mensaje"></textarea>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Información Sobre Propiedad</legend>
+
+                <label for="opciones">Vende o Compra</label>
+                <select id="opciones" >
+                    <option value="" disabled selected> --Seleccione-- </option>
+                    <option value="Compra">Compra</option>
+                    <option value="Vende">Vende</option>
+                </select>
+
+                <label for="cantidad">Cantidad</label>
+                <input type="number">
+
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Contacto</legend>
+
+                <p>Como desea ser Contactado:</p>
+
+                <div class="forma-contacto">
+                    <label for="télefono">Télefono</label>
+                    <input type="radio" name="contacto" value="telefono" id="télefono">
+
+                    <label for="e-mail">E-mail</label>
+                    <input type="radio" name="contacto" value="correo" id="e-mail">
+                </div>
+
+                <p>Si eligió Teléfono, elija la fecha y la hora</p>
+                <label for="fecha">Fecha</label>
+                <input type="date" id="fecha">
+
+                <label for="hora">Hora</label>
+                <input type="time" id="hora" min="09:00" max="21:00">
+
+            </fieldset>
+
+            <input type="submit" value="Enviar" class="buttom buttom-green">
+
+        </form>
+    </main>
+
+    <footer class="site-footer section">
+        <div class="conteiner conteiner-footer">
+            <nav class="navigation">
+                <a href="Nosotros.html">Nosotros</a>
+                <a href="anuncios.html">Anucios</a>
+                <a href="blog.html">Blog</a>
+                <a href="contacto.html">Contacto</a>
+            </nav>
+            <p class="copyright">Todos los derechos reservados 2020 &copy;</p>
+        </div>
+    </footer>
+</body>
+</html>
